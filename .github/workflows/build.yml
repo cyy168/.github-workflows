@@ -31,7 +31,8 @@ jobs:
           npx pkg . --targets node16-linux-x64 --output dist/koa-service-linux
 
       - name: Upload Binary Artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: koa-service-linux
           path: dist/koa-service-linux
+
